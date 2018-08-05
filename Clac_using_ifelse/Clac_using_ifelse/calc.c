@@ -4,7 +4,7 @@
 void main()
 {
 	printf("\t\t\t\tCalculator\n\n\n");
-	int num1, num2, result,operator,bunty,anil;
+	int num1, num2, result,operator,akki,anil;
 	anil = 0;
 	printf("Please enter the first number to be operated  :-	");
 	scanf_s("%d", &num1);
@@ -34,14 +34,14 @@ void main()
 				if (operator==4)
 				{
 					printf("\n To know the remainder press 5 or to know quotient press 6\n\n ");
-					scanf_s("%d", &bunty);
-					if(bunty==5)
+					scanf_s("%d", &akki);
+					if(akki==5)
 					{
 						result = num1 % num2;
 						anil = 1;
 					}
 					else {
-						if (bunty == 6)
+						if (akki == 6)
 						{
 							result = num1 / num2;
 							anil = 1;
