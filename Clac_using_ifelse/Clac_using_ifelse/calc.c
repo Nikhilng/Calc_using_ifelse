@@ -4,8 +4,8 @@
 void main()
 {
 	printf("\t\t\t\tCalculator\n\n\n");
-	int num1, num2, result,operator,akki,anil;
-	anil = 0;
+	int num1, num2, result,operator,akki,choco;
+	choco = 0;
 	printf("Please enter the first number to be operated  :-	");
 	scanf_s("%d", &num1);
 	printf("\n\nEnter the second number to be operated	      :-        ");
@@ -17,34 +17,34 @@ void main()
 	if (operator==1)
 	{
 		result = num1 + num2;
-		anil = 1;
+		choco = 1;
 	}
 	else {
 		if (operator==2) {
 			result = num1 - num2;
-			anil = 1;
+			choco = 1;
 		}
 		else {
 			if (operator==3)
 			{
 				result = num1 * num2;
-				anil = 1;
+				choco = 1;
 			}
 			else {
 				if (operator==4)
 				{
-					printf("\n To know the remainder press 5 or to know quotient press 6\n\n ");
+					printf("\n To know the remainder press :- '5' or to know quotient press :- '6'\n\n ");
 					scanf_s("%d", &akki);
 					if(akki==5)
 					{
 						result = num1 % num2;
-						anil = 1;
+						choco = 1;
 					}
 					else {
 						if (akki == 6)
 						{
 							result = num1 / num2;
-							anil = 1;
+							choco = 1;
 						}
 						else {
 							printf("Invalid Command");
@@ -57,7 +57,7 @@ void main()
 			}
 		}
 	}
-	if (anil == 1)
+	if (choco == 1)
 	{
 		printf("\n\n\n\t\t\tThe result is  = %d", result);
 	}
